@@ -1,0 +1,87 @@
+.header-container{
+    position: relative;
+    overflow: hidden;
+}
+.bg{
+    background-image: url('https://pm1.narvii.com/7397/7b7bb622be764aa72d424ae15af53a43ff444f99r1-736-475v2_hq.jpg');
+    background-size: 100% auto;
+    height: 85vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+.monkey-container{
+    background-image: url('https://www.pngkey.com/png/full/61-612834_monkey-d-luffy-04-gambar-anime-one-piece.png');
+    background-size: 38% auto;
+    background-repeat: no-repeat;
+    height: 85vh;
+    z-index: 1;
+    position: relative;
+    top: 0;
+    left: 10%;
+    animation: fadeIn 2s;
+}
+
+.logo-one{
+    background-image: url('https://1000marcas.net/wp-content/uploads/2022/10/One-Piece-Logo.png');
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    height: 85vh;
+    /* z-index: 1; */
+    position: relative;
+    top: 25%;
+    left: 35%;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.char-img{
+    width: 100%;
+    height: auto;
+}
+
+.desc{
+    font-family: sans-serif;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    height: 35vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-char{
+    margin-top: 5%;
+}
+
+.spacer{
+    flex: 1 1 auto;
+}
+
+.menu-op{
+   margin: 0 15px 0;
+    cursor: pointer;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:hover{
+    color: red;
+}

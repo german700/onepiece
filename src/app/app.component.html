@@ -1,0 +1,55 @@
+<p>
+  <mat-toolbar>
+    <span><h1 style="margin-left: 30px;"><img alt="Logo of the anime One Piece" src="https://www.freepnglogos.com/uploads/one-piece-logo-18.png" style="height: 50px; width: 50px;"></h1></span>
+    <span class="spacer"></span>
+    <span>
+      <div class="flex-row">
+        <div class="menu-op"><a class="nav-link" href="#header">Home</a></div>
+        <div class="menu-op"><a class="nav-link" href="#characters">Characters</a></div>
+        <div class="menu-op"><a class="nav-link" href="#footer">Contact</a></div>
+      </div>
+    </span>
+  </mat-toolbar>
+</p>
+
+<header>
+  <div class="header-container" id="header">
+   
+    <div class="monkey-container">
+      <div class="logo-one"></div>
+    </div>
+    <div class="bg"></div>
+    
+  </div>
+</header>
+
+<section>
+  <div class="section-char" id="characters">
+    <h1 style="text-align: center;">Characters</h1>
+    <div class="flex-row">
+      <div class="card shadow" *ngFor="let card of cards">
+        <div class="flex-column">
+          <div>
+            <img src="{{card.url}}" class="char-img">
+          </div>
+          <div>
+            <h1 class="nav-link">{{card.name}}</h1>
+          </div>
+          <div class="desc">
+            {{card.desc}}
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+ 
+</section>
+
+<footer>
+  <div class="footer" id="footer">
+    <div>Made with ❤️ by Germán D'Alba Verbel</div>
+    <div>+57 307 2243205</div>
+  </div>
+</footer>
